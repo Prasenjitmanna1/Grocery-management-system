@@ -1,0 +1,225 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@media print {
+    
+
+#printableArea{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 18px;
+
+
+}
+
+    #print-button, #print-button2{
+
+        visibility: hidden;
+    }
+   
+  
+  }
+body {
+margin:0;
+padding: 0;
+font-size: 16px;
+font-weight: 300;
+width: 100%;
+background:rgb(204,204,204);
+font-family: 'Roboto condensed', sans-serif;
+
+}
+
+h2, h4, p {
+margin: 0;
+}
+
+.page{
+background: #fff;
+display: block;
+margin: 3rem auto 3rem auto;
+position: relative;
+box-shadow : 0 0 0.5cm rgba(0, 0, 0, 0.5);
+
+}
+
+.page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+    overflow-x: hidden;
+}
+
+.top-section{
+    color:#fff;
+    padding: 20px;
+    height: 115px;
+    background-color: #1b9a41;
+
+}
+
+.top-section h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    padding-top: 15px;
+
+}
+
+.top-section .address{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.top-section .address-content{
+    max-width: 350px;
+}
+
+.contact .contact-content{
+    max-width: 270px;
+    float: right;
+    margin-top: 32px;
+}
+
+.contact-content .email,
+.contact-content .number{
+    display: block;
+}
+
+.contact-content .email span,
+.contact-content .number span{
+    float: right;
+    margin-left: 30px;
+}
+
+.billing-invoice{
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.billing-invoice .title{
+    font-weight: 400;
+    float: left;
+}
+
+.billing-invoice .des{
+    font-weight: 400;
+    float: right;
+}
+
+.billing-invoice .code{
+    font-weight: 700;
+    text-align: right;
+}
+
+.billing-invoice .issue{
+    text-align: right;
+    font-size: 13px;
+}
+
+.billing-to{
+padding: 20px;
+margin-top: 40px;    
+}
+
+.billing-to .title{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.billing-to .billed-sec{
+    width: 50%;
+    float: left;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.billing-to .sub-title,
+.billing-to .name{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.billing-to .ship-add{
+    max-width: 300px;
+}
+
+.table{
+    padding: 20px;
+}
+
+.table table{
+    width: 100%;
+}
+
+.table table, th, td{
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #0db77e;
+    border-collapse: collapse;
+}
+
+.table tr th{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.table table tr:first-child{
+    color: #fff;
+    background-color: #1b9a41;
+}
+
+.table tr th:nth-child(2),
+.table tr th:nth-child(2){
+    text-align: left;
+    width: 230px;
+}
+
+.bottom-section{
+    margin-top: 15px;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bottom-section .status-content h4{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.bottom-section .status.free::before,
+.bottom-section .status.paid::before{
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.bottom-section .status.free::before{
+    content: "Unpaid";
+    background-color: red;
+}
+
+.bottom-section .status.paid::before{
+    content: "Paid";
+    background-color: green;
+}
+
+.bottom-section .tnx{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
